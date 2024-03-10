@@ -22,9 +22,9 @@ const Signup = () => {
     const { register, handleSubmit, formState: { errors }, watch } = useForm();
     return (
         <>
-            <Box sx={{ flexGrow: 1, display: 'flex'}}>
-                <Grid container spacing={2} height='100vh' padding={2}>
-                    <Grid item xs={14} sm={6} sx={{
+            <Box sx={{ flexGrow: 1, display: 'flex'}} >
+                <Grid container spacing={2} height='100vh' padding={4}>
+                    <Grid item xs={12} sm={6} sx={{
                         background: `url(${SignupSlider})`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
@@ -32,9 +32,9 @@ const Signup = () => {
                         borderRadius: '8px' 
                     }}>
                     </Grid>
-                    <Grid item xs={12} sm={6} sx={{}} >
+                    <Grid item xs={12} sm={6} >
                         <Box sx={{ flexGrow: 1 }} ml={8} mt={11}>
-                            <Typography fontFamily='Poppins' fontSize={30} fontWeight='bold'>
+                            <Typography fontFamily='Poppins' fontSize={30} fontWeight='bold' >
                                 Create an Account
                             </Typography>
                             <Typography fontFamily='Poppins' fontSize={17} sx={{ color: '#949191', mt: 1 }}>
@@ -131,7 +131,6 @@ const Signup = () => {
                                             Create Account
                                         </Button>
                                     </Box>
-
                                 </form>
                             </Box>
                         </Box>
